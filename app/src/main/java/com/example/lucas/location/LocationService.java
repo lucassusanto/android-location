@@ -32,14 +32,11 @@ public class LocationService {
         mLocationRequest.setFastestInterval(interval);
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
-        LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
-                .addLocationRequest(mLocationRequest);
-
         /*
         // import com.google.android.gms.tasks.OnSuccessListener;
         // import com.google.android.gms.tasks.Task;
-
-        LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder();
+        LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
+                .addLocationRequest(mLocationRequest);
         SettingsClient client = LocationServices.getSettingsClient(this);
 
         Task<LocationSettingsResponse> task = client.checkLocationSettings(builder.build());
