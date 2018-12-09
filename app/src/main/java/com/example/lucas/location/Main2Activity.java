@@ -19,7 +19,7 @@ public class Main2Activity extends AppCompatActivity {
         txLat = findViewById(R.id.tvLat);
         txLon = findViewById(R.id.tvLon);
 
-        ls = new LocationService(this);
+        ls = new LocationService(this, 2000);
         ls.resume();
     }
 

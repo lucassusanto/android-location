@@ -81,7 +81,7 @@ public class LocationService {
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(activity);
 
         setLocationCallBack();
-        createLocationRequest(0);
+        createLocationRequest(5000);
 
         this.latitude = 0;
         this.longitude = 0;
